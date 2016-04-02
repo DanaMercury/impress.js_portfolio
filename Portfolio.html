@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+        
         <title>Dana's Super Cool Portfolio</title>
 
         <!-- Google Webfonts and our stylesheet -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow|Open+Sans:300" />
-        <link rel="stylesheet" href="assets/css/styles.css" />
+        <link href="styles.css" rel="stylesheet" />
 
         <!--[if lt IE 9]>
           <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
+	<body>
+		<div id="impress">
 
-    <body>
+<!-- Can't add color -->			
+			<div class="step" data-y="800">
+				<p>Our future</p>
+			</div>
 
-		<div id="impress" class="impress-not-supported">
+			<div class="step" data-y="400">
+				<h1>a little smarter</h1>
+			</div>
+			
+			<div class="step">
+				<h1>a little kinder</h1>
+			</div>
 
-			<div class="no-support-message">
-				Sorry! Your browser is unable to load the Impress slideshow. Try reloading the page in Google Chrome or Safari.
+			<div class="step" data-y="-400">
+				<h1>a little better</h1>
+			</div>
+			
+			<div class="step" data-y="-800">
+				<p>One step at a time</p>
 			</div>
 		
-			<div class="step" data-x="-800">
-				Slide 1
-			</div>
-			
-			<div class="step" data-x="-400" data-rotate-x="90">
-				Slide 2
-			</div>
-			
-			<div class="step" data-scale="2">
-				Slide 3
+			<div class="step" data-scale="3">
 			</div>
 
-			<div class="step" data-x="400" data-scale=".25">
-				Slide 4
-			</div>
-			
-			<div class="step" data-x="800" data-scale=".25" data-rotate-z="90">
-				Slide 5
+			<!-- Section 2- Problems (step 8-10)-->
+			<div class="step" data-rotate-y="90">
+				<p>The key to <b>getting results</b> is asking questions and solving problems</p>
 			</div>
 
-		</div>
+			<div class="step" data-rotate-y="90" data-y="800" data-rotate-z="90">
+				<h1>Questions I've tackled recently</h1>	
+				<ul>
+				<li>How do you win in Vegas?</li>
+				<li>How can we improve data literacy among adults?</li>
+				<li>How can we increase productivity?</li>
+				</ul>	
+			</div>
 
-		<a id="arrowLeft" class="arrow">&lt;</a>
-		<a id="arrowRight" class="arrow">&gt;</a>
 
         <!-- JavaScript includes -->
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script src="assets/js/impress.js"></script>
 		<script src="assets/js/script.js"></script>
+		<script type="text/javascript" src="impress.js"></script>
 
     </body>
 </html>
