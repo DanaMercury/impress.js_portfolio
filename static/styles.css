@@ -1,5 +1,28 @@
 .no-support-message { display:none; }
 .impress-not-supported .no-support-message { display:block; }
 
-body { background:#EBEBEB; font:50px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; color:#333; }
-.step { width:940px; margin:0 auto 24px auto; text-align:center; }
+body { background:#FEFEFE; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; color:#333; }
+.step { width:100vw; margin:0 auto 2vh auto; text-align:center; -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -ms-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; transition: .5s ease-in-out; }
+ }
+
+.hide { opacity: 0; }
+.eternal { opacity: 1; }
+.active { opacity: 1; }
+.future { opacity: 0; }
+.future.eternal { opacity: 1; }
+.past { opacity: 0.3; }
+.past.eternal { opacity: 1; }
+.keep { opacity: 1; }
+.past.hide { opacity: 0; }
+
+h1 { font-size: 10vh; }
+p { font-size: 5vh; }
+p1 { font-size: 10vh; }
+p2 { font-size: 3vh; }
+p3 { font-size: 2vh; }
+
+.accent1 { color: #5D030A; }
+.accent2 { color: #21a0b4; }
+.accent3 { color: #f0e176; }
+.accent4 { color: #746f6c; }
+.accent5 { color: #db9784; }
