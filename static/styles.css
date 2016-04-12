@@ -27,9 +27,10 @@ p { font-size: 5vh; }
 .signature { margin-left: 25vw; font-family: 'Rock Salt', cursive; }
 
 .PushCenter { width: 33vw; margin-left: auto; margin-right: auto; }
+.work { width: 30vw; margin-left: auto; margin-right: auto; }
+.selfie { width: 20vw; margin-left: 60vw }
 
 li { margin-bottom: 3vh; }
-
 
 .accent1 { color: #5D030A; }
 .accent2 { color: #21a0b4; }
