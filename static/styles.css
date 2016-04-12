@@ -17,10 +17,16 @@ body { background:#FEFEFE; font-family: "HelveticaNeue-Light", "Helvetica Neue L
 
 h1 { font-size: 10vh; }
 p { font-size: 5vh; }
-pSuper { font-size: 10vh; }
-p1 { font-size: 8vh; }
-p2 { font-size: 3vh; }
-p3 { font-size: 2vh; }
+.super { font-size: 12vh; }
+.large { font-size: 8vh; }
+.medium { font-size: 3vh; }
+.small { font-size: 2vh; }
+
+.left { text-align: left; }
+.right { text-align: right; }
+
+li { margin-bottom: 3vh; }
+
 
 .accent1 { color: #5D030A; }
 .accent2 { color: #21a0b4; }
