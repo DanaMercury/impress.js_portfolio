@@ -24,6 +24,10 @@ p { font-size: 5vh; }
 
 .left { text-align: left; }
 .right { text-align: right; }
+.signature { margin-left: 25vw; font-family: 'Rock Salt', cursive; }
+
+
+.PushCenter { width: 33vw; margin-left: auto; margin-right: auto; }
 
 li { margin-bottom: 3vh; }
 
@@ -32,4 +36,4 @@ li { margin-bottom: 3vh; }
 .accent2 { color: #21a0b4; }
 .accent3 { color: #f0e176; }
 .accent4 { color: #746f6c; }
-.accent5 { color: #db9784; }
+.accent5,a { color: #db9784; }
