@@ -3,24 +3,36 @@
 
 body { background:#FEFEFE; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; color:#333; }
 .step { width:100vw; margin:0 auto 2vh auto; text-align:center; -webkit-transition: .5s ease-in-out; -moz-transition: .3s ease-in-out; -ms-transition: .3s ease-in-out; -o-transition: .5s ease-in-out; transition: .3s ease-in-out; }
- }
 
-.hide { opacity: 0; }
-.eternal { opacity: 1; }
-.active { opacity: 1; }
-.future { opacity: 0; }
-.future.eternal { opacity: 1; }
-.past { opacity: 0.3; }
-.past.eternal { opacity: 1; }
-.keep { opacity: 1; }
-.past.hide { opacity: 0; }
+.past { opacity: 0.3; } /* viewed steps are 30% by default */
+.future { opacity: 0; } /* future steps are hidden by default */
+
+.hide { opacity: 0; } /* always hidden unless active */
+.casper { opacity: 0.2; } /* always ghostly, unless active */
+.eternal { opacity: 1; } /* always visible, no matter what */
+
+.active { opacity: 1; } /* active step should always be visible */
 
 h1 { font-size: 10vh; }
 p { font-size: 5vh; }
+
+.haze { background: rgba(254,254,254,.8); }
+.hint { background: rgba(0,0,0,0.4); color: white; font-size: 5vh; padding: 20px; width: 100%; }
+
+/* DEMO SITE http://impress.github.io/impress.js/#/bored */
+/* HTML https://github.com/impress/impress.js/blob/master/index.html */
+/* CSS https://github.com/impress/impress.js/blob/master/css/impress-demo.css */
+
 .super { font-size: 12vh; }
 .large { font-size: 8vh; }
 .medium { font-size: 3vh; }
 .small { font-size: 2vh; }
+
+.shrink, .grow { display: inline-block; -webkit-transition: 1s ease-in-out; -moz-transition: 1s ease-in-out; -ms-transition: 1s ease-in-out; -o-transition: 1s ease-in-out; transition: 1s ease-in-out; }
+.grow { width: 40vh; }
+.present .shrink { -webkit-transform: scale(0.5); -moz-transform: scale(0.5); -ms-transform: scale(0.5); -o-transform: scale(0.5); transform: scale(0.5); }
+.present .grow {-webkit-transform: scale(2.5); -moz-transform: scale(2.5); -ms-transform: scale(2.5); -o-transform: scale(2.5); transform: scale(2.5); }
+
 
 .left { text-align: left; }
 .right { text-align: right; }
@@ -38,5 +50,8 @@ li { margin-bottom: 3vh; }
 .accent4 { color: #746f6c; }
 .accent5,a { color: #db9784; }
 
-input[type="checkbox"] { transform: scale(2, 2); margin-left: 3vw; margin-right: 5vw;}
-input[type="submit"] { transform: scale(3, 3); color: #f0e176; }
+.match { display: none; }
+#match1 { display: block; }
+
+input[type="checkbox"] { zoom: 200%; margin-left: 1vw; margin-right: 2vw; }
+input[type="button"] { zoom: 300%; color: #f0e176; background: #FFF; border: solid 1px #DDD; border-radius: 5px; }

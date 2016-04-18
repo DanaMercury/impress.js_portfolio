@@ -9,6 +9,8 @@
         <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
         <link href="styles.css" rel="stylesheet" />
 
+		<script src="app.js"></script>
+
         <!--[if lt IE 9]>
           <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -17,44 +19,49 @@
 		<div id="impress">
 
 <!-- Lead in section on motivation (step 1-6) -->
-			<div class="step keep" data-y="800">
-				<p class="large">Our future</p>
+
+			<div class="step eternal" data-y="800">
+				<p class="large">Our future</p><br />
+					<p class="hint"> Navigate with arrows or space bar</p>
 			</div>
 
-			<div class="step keep" data-y="400">
+			<div class="step eternal" data-y="400">
 				<h1 class="accent3">a little smarter</h1>
 			</div>
 			
-			<div class="step keep">
+			<div class="step eternal">
 				<h1 class="accent5">a little kinder</h1>
 			</div>
 
-			<div class="step keep" data-y="-400">
+			<div class="step eternal" data-y="-400">
 				<h1 class="accent2">a little better</h1>
 			</div>
 			
-			<div class="step keep" data-y="-800">
+			<div class="step eternal" data-y="-800">
 				<p class="large">One step at a time</p>
 			</div>
 		
 			<!-- move out to see full pic -->		
-			<div class="step keep" data-scale="2.5">
+			<div class="step eternal" data-scale="2.5">
 			</div>
 
 <!-- Overview of problem solving (step 7-8)-->
-<!-- FIX transition time -->
 			<div class="step" data-y="1600" data-z="-300" data-rotate-y="180" data-scale=".75">
 				<p class="large">The key to <span class="accent5">making progress</span> is
 				asking questions and solving problems with data</p>
 			</div>
 
 			<div class="step" data-y="1800" data-z="-300" data-rotate-y="180" data-scale=".75">
-				<p class="large">No question is <span class="small">too small</span> or <span class="super">too big</span> to benefit from the use of data</p>
+				<p>No question is <span class="shrink">too small</span> or <span class="grow">too big</span>
+				<br /> 
+				<br /> 
+				to benefit from the use of data</p>
 			</div>
 
-<!-- FIX transition time -->			
 <!-- Problem solving example- Vegas (step 9)-->	
-			<div class="step" data-y="3000" data-z="-2000" data-x="1200" data-rotate-y="180">
+			<div class="step casper" data-y="2200" data-z="-1000" data-x="1000" data-rotate-y="180">
+			<!-- <div class="step" data-y="3000" data-z="-2000" data-x="1200" data-rotate-y="180"> -->
+
 
 				<p class="left">A small question</p>
 				
@@ -71,7 +78,7 @@
 			</div>
 
 <!-- findings part 1 -->
-			<div class="step" data-y="3450" data-z="-2000" data-x="1200" data-rotate-y="180">
+			<div class="step casper" data-y="2650" data-z="-1000" data-x="1000" data-rotate-y="180">
 				<p class="left">Findings</p>
 				<p><span class="left accent3">The strategy worked.</span>
 				We walked away with <strong>$196.28</strong> in profit.</p>			
@@ -82,7 +89,7 @@
 			</div>
 
 <!-- findings part 2 -->	
-			<div class="step" data-y="4025" data-z="-2000" data-x="1200" data-rotate-y="180">
+			<div class="step casper" data-y="3175" data-z="-1000" data-x="1000" data-rotate-y="180">
 				<p class="left medium"><strong>Location matters.</strong><span class="accent4"> I discovered that the majority of money
 				 was spent in our hotel. This map provides insight into where we should stay next time we visit.</p>
 					<img src="https://cdn-images-1.medium.com/max/800/1*hbfR-M3jKyFA1Gx1MtYHQw.jpeg" alt="map" class="work">
@@ -160,7 +167,7 @@
 			</div>
 
 <!-- Moving in the right direction (step 15-19)-->
-			<div class="step hide" data-y="5050" data-z="-2000" data-x="-1200" data-rotate-y="180"  data-rotate-x="90">
+			<div class="step hide casper" data-y="5050" data-z="-2000" data-x="-1200" data-rotate-y="180"  data-rotate-x="90">
 				<p class="large">Problems aren't solved overnight</p>
 				<p class="accent5">But data can keep us moving in the right direction</p>
 				<p class="right">What gets results --> </p>
@@ -195,7 +202,7 @@
 	<!-- resting back on "our future" -->
 	
 			<div class="step" data-y="1000" data-z="0" data-rotate-y="360" data-rotate-x="0">
-				<img src="http://drive.google.com/uc?export=view&id=1Ap_nF945apL2bE1KQdK5EAEGbabL6-_7ZQ" alt="profile pic" class="selfie">				
+				<img src="dana.jpg" alt="profile pic" class="selfie">				
 				<p class=" large">I'm looking to join a team of talented problem solvers</p>
 				<h1>Is that you?</h1>		
 			</div>
@@ -203,69 +210,93 @@
 <!-- FIX redirect -->
 			<div class="step hide" data-y="500" data-x="2200" data-z="800" data-rotate-y="360" data-rotate-x="5">
 				<p class="large"><strong>Check all that apply</strong></p>		
-				<form name="fit" onsubmit="document.location.href='http://localhost:3000/?innovate=no&ego=no#/step-22'">
-						<p class="right accent4">Data informs our decision-making<input type="checkbox" name="decision" value="no" />
-						</p>	
-						<p class="right accent4">We are innovating to improve products/services and internal processes<input type="checkbox" name="innovate" value="no" />
-						</p>
-						<p class="right accent4">Work trumps ego<input type="checkbox" name="ego" value="no" />
-						</p>
-						<input type="submit" value="See if we're a match!" />
-				</form>
+				<p class="right accent4">Data informs our decision-making <input type="checkbox" name="decision" /></p>	
+				<p class="right accent4">We are innovating to improve products/services and internal processes <input type="checkbox" name="innovate" /></p>
+				<p class="right accent4">Work trumps ego <input type="checkbox" name="ego" /></p>
+				<input id="check" type="button" value="See if we're a match!" />
 			</div>
 			
 
 <!-- Contact information (step 22-24)-->
-	<!-- Best Match -->
 			<div class="step hide" data-y="500" data-x="3500" data-z="800" data-rotate-y="360" data-rotate-x="5">
-			<a name="bmatch"></a>
-				<p class="large">Wow. You're awesome!</p>
-				<p class="accent2">Let's team up and make things happen</p>
-				<ul class="PushCenter left medium">
-					<li>Connect with me on <a href = "https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button
-				" target="_blank">LinkedIn</a></li>
-					<li>Check out my <a href = "https://docs.google.com/document/d/1l2OkhgDXvWxoMjeYoxGRAaDbq02-ubmcaYD5R3PEUtE/edit?usp=sharing
-				" target="_blank">resume</a></li>
-					<li>Email me at <a href="mailto:danaamercury@gmail.com?Subject=Let's%20Make%20Things%20Happen%20" target="_top">danaamercury@gmail.com</a></li>
-				</ul>
-				<p class="signature">Dana Mercury</p>
-			</div>
+				<!-- Best Match -->
+				<div id="match3" class="match">
+					<p class="large">Wow. You're awesome!</p>
+					<p class="accent2">Let's team up and make things happen</p>
+					<ul class="PushCenter left medium">
+						<li>Connect with me on <a href = "https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button
+					" target="_blank">LinkedIn</a></li>
+						<li>Check out my <a href = "https://docs.google.com/document/d/1l2OkhgDXvWxoMjeYoxGRAaDbq02-ubmcaYD5R3PEUtE/edit?usp=sharing
+					" target="_blank">resume</a></li>
+						<li>Email me at <a href="mailto:?Subject=Let's%20Make%20Things%20Happen%20" target="_top">danaamercury@gmail.com</a></li>
+					</ul>
+					<p class="signature">Dana Mercury</p>
+				</div>
 
-	<!-- Match -->
-			<div class="step hide" data-y="-500" data-x="3500" data-z="800" data-rotate-y="360" data-rotate-x="5">
-			<a name="match"></a>
-				<p class="large">We might make a good team!</p>
-				<p class="accent2">Let's give it a go and have a convo</p>
-				<ul class="PushCenter left medium">
-					<li>Connect with me on <a href = "https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button
-				" target="_blank">LinkedIn</a></li>
-					<li>Check out my <a href = "https://docs.google.com/document/d/1l2OkhgDXvWxoMjeYoxGRAaDbq02-ubmcaYD5R3PEUtE/edit?usp=sharing
-				" target="_blank">resume</a></li>
-					<li>Email me at <a href="mailto:danaamercury@gmail.com?Subject=Let's%20See%20If%20We're%20A%20Good%20Team" target="_top">danaamercury@gmail.com</a></li>
-					<li>Share this <a href="mailto:danaamercury@gmail.com?Subject=Interesting%20technical%20talent&Body=If you're looking to build your team, check out this site: danamercury.herokuapp.com" target="_top">site</a> with your colleagues</li>
-				</ul>
-				<p class="signature">Dana Mercury</p>
-			</div>
+				<!-- Match -->
+				<div id="match2" class="match">
+					<p class="large">We might make a good team!</p>
+					<p class="accent2">Let's give it a go and have a convo</p>
+					<ul class="PushCenter left medium">
+						<li>Connect with me on <a href = "https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button
+					" target="_blank">LinkedIn</a></li>
+						<li>Check out my <a href = "https://docs.google.com/document/d/1l2OkhgDXvWxoMjeYoxGRAaDbq02-ubmcaYD5R3PEUtE/edit?usp=sharing
+					" target="_blank">resume</a></li>
+						<li>Email me at <a href="mailto:danaamercury@gmail.com?Subject=Let's%20See%20If%20We're%20A%20Good%20Team" target="_top">danaamercury@gmail.com</a></li>
+						<li>Share this <a href="mailto:?Subject=Interesting%20technical%20talent&Body=If you're looking to build your team, check out this site: danamercury.herokuapp.com" target="_top">site</a> with your colleagues</li>
+					</ul>
+					<p class="signature">Dana Mercury</p>
+				</div>
 
-	<!-- Maybe Match -->
-			<div class="step hide" data-y="1500" data-x="3500" data-z="800" data-rotate-y="360" data-rotate-x="5">
-			<a name="mmatch"></a>
-				<p class="large">Hmmm...it doesn't sound like we're a match right now</p>
-				<p class="accent2">Maybe we can work together in the future!</p>
-				<ul class="PushCenter left medium">
-					<li>Connect with me on <a href = "https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button
-				" target="_blank">LinkedIn</a></li>
-					<li>Check out my <a href = "https://docs.google.com/document/d/1l2OkhgDXvWxoMjeYoxGRAaDbq02-ubmcaYD5R3PEUtE/edit?usp=sharing
-				" target="_blank">resume</a></li>
-					<li>Email me at <a href="mailto:danaamercury@gmail.com?Subject=I%20saw%20your%20site%20and.." target="_top">danaamercury@gmail.com</a></li>
-					<li>Share this <a href="mailto:danaamercury@gmail.com?Subject=Interesting%20technical%20talent&Body=If you're looking to build your team, check out this site: danamercury.herokuapp.com" target="_top">site</a> with your colleagues</li>
-				</ul>
-				<p class="signature">Dana Mercury</p>
+				<!-- Maybe Match -->
+				<div id="match1" class="match">
+					<p class="large">Hmmm...it doesn't sound like we're a match right now</p>
+					<p class="accent2">Maybe we can work together in the future!</p>
+					<ul class="PushCenter left medium">
+						<li>Connect with me on <a href = "https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button
+					" target="_blank">LinkedIn</a></li>
+						<li>Check out my <a href = "https://docs.google.com/document/d/1l2OkhgDXvWxoMjeYoxGRAaDbq02-ubmcaYD5R3PEUtE/edit?usp=sharing
+					" target="_blank">resume</a></li>
+						<li>Email me at <a href="mailto:danaamercury@gmail.com?Subject=I%20saw%20your%20site%20and.." target="_top">danaamercury@gmail.com</a></li>
+						<li>Share this <a href="mailto:?Subject=Interesting%20technical%20talent&Body=If you're looking to build your team, check out this site: danamercury.herokuapp.com" target="_top">site</a> with your colleagues</li>
+					</ul>
+					<p class="signature">Dana Mercury</p>
+				</div>
 			</div>
+		</div>
 
         <!-- JavaScript includes -->
+
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script src="impress.js"></script>
-		<script>impress().init();</script>
+		<script>
+			var api = impress();
+			api.init();
+
+			function updateMatches() {
+				$('.match').hide();
+				switch($('input[type="checkbox"]:checked').length) {
+
+					case 3:
+						$('#match3').show();
+						break;
+		
+					case 2:
+						$('#match2').show();
+						break;
+		
+					default:
+						$('#match1').show();
+				}
+			}
+
+			$('input[type="checkbox"]').click(function() { updateMatches(); });
+
+			$('#check').click(function(event) {
+			    event.stopPropagation();
+				updateMatches();
+				api.next();
+			});
+		</script>
     </body>
 </html>
