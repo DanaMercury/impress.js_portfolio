@@ -16,7 +16,8 @@ body { background:#FEFEFE; font-family: "HelveticaNeue-Light", "Helvetica Neue L
 h1 { font-size: 10vh; }
 p { font-size: 5vh; }
 
-.haze { background: rgba(254,254,254,.8); }
+.haze { background: rgba(254,254,254,.9); padding: 20px; }
+.cover { background: rgba(254,254,254,1); height: 100%; }
 .hint { background: rgba(0,0,0,0.4); color: white; font-size: 5vh; padding: 20px; width: 100%; }
 
 /* DEMO SITE http://impress.github.io/impress.js/#/bored */
