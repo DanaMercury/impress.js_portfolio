@@ -16,7 +16,7 @@ body { background:#FEFEFE; font-family: "HelveticaNeue-Light", "Helvetica Neue L
 h1 { font-size: 10vh; }
 p { font-size: 5vh; }
 
-.haze { background: rgba(254,254,254,.9); padding: 20px; }
+.haze { background: rgba(254,254,254,.95); padding: 30px; }
 .cover { background: rgba(254,254,254,1); height: 100%; }
 
 .super { font-size: 12vh; }
@@ -29,10 +29,8 @@ p { font-size: 5vh; }
 .present .shrink { -webkit-transform: scale(0.5); -moz-transform: scale(0.5); -ms-transform: scale(0.5); -o-transform: scale(0.5); transform: scale(0.5); }
 .present .grow {-webkit-transform: scale(2.5); -moz-transform: scale(2.5); -ms-transform: scale(2.5); -o-transform: scale(2.5); transform: scale(2.5); }
 
-.step .hint { opacity:0; display: inline-block; position: fixed; left: 0; right: 0; background: rgba(0,0,0,0.2); color: white; font-size: 5vh; padding: 30px; -webkit-transition: opacity .75s ease-in-out; -moz-transition: opacity 1s ease-in-out; -ms-transition: opacity 1s ease-in-out; -o-transition: opacity 1s ease-in-out; transition: opacity 1s ease-in-out; -webkit-transition-delay: .75s; -moz-transition-delay: .75s; -o-transition-delay: .75s; transition-delay: .75s; }
+.step .hint { margin-top: -20vh; opacity:0; display: inline-block; position: fixed; left: 0; right: 0; background: rgba(0,0,0,0.2); color: white; padding: 35px; -webkit-transition: opacity .75s ease-in-out; -moz-transition: opacity 1s ease-in-out; -ms-transition: opacity 1s ease-in-out; -o-transition: opacity 1s ease-in-out; transition: opacity 1s ease-in-out; -webkit-transition-delay: .2s; -moz-transition-delay: .2s; -o-transition-delay: .2s; transition-delay: .2s; }
 .loaded .step.active .hint { opacity:1; }
-
-
 
 .left { text-align: left; }
 .right { text-align: right; }
@@ -44,11 +42,12 @@ p { font-size: 5vh; }
 
 li { margin-bottom: 3vh; }
 
-.accent1 { color: #5D030A; }
-.accent2 { color: #21a0b4; }
-.accent3 { color: #f0e176; }
-.accent4 { color: #746f6c; }
 .accent5,a { color: #db9784; }
+.accent4 { color: #746f6c; }
+.accent3 { color: #f0e176; }
+.accent2 { color: #21a0b4; }
+.accent1 { color: #5D030A; }
+
 
 .match { display: none; }
 #match1 { display: block; }
