@@ -16,7 +16,7 @@ body { background:#FEFEFE; font-family: "HelveticaNeue-Light", "Helvetica Neue L
 h1 { font-size: 10vh; }
 p { font-size: 5vh; }
 
-.haze { background: rgba(254,254,254,.95); padding: 30px; }
+.haze { background: rgba(254,254,254,.95); padding: 20px; }
 .cover { background: rgba(254,254,254,1); height: 100%; }
 
 .super { font-size: 12vh; }
@@ -38,7 +38,7 @@ p { font-size: 5vh; }
 
 .PushCenter { width: 33vw; margin-left: auto; margin-right: auto; }
 .work { width: 30vw; margin-left: auto; margin-right: auto; }
-.selfie { width: 25vw; margin-left: 60vw; opacity: .9; margin-top: -20vh }
+.selfie { width: 25vw; margin-left: 60vw; opacity: .7; margin-top: -20vh }
 
 li { margin-bottom: 3vh; }
 
