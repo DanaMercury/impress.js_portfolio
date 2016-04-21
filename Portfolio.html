@@ -17,6 +17,11 @@
         <![endif]-->
     </head>
 	<body>
+	
+		<div id="progress">
+			<div id="progress-bar"></div>
+		</div>
+	
 		<div id="impress">
 
 <!-- Lead in section on motivation (step 1-6) -->			
@@ -312,6 +317,15 @@ do it again</a></p>
 			function hint() {
 				$('body').addClass('loaded');
 			}
+			
+			var stepCount = $('.step').length;
+			$(document).on('impress:stepenter', function(e) {
+				var currentSlide = e.target;
+				var currentSlideProgress = $('.step').index(currentSlide) + 1;
+				var progressPerStep = 100 / stepCount;
+				var progress = Math.ceil(currentSlideProgress * progressPerStep);
+			    $('#progress-bar').css('width',progress+'%');
+			});
 			
 			setTimeout(hint, 1);
 		</script>
