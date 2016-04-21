@@ -21,12 +21,13 @@
 		<div id="progress">
 			<div id="progress-bar"></div>
 		</div>
+		
+		<p class="large hint"> Navigate with arrows or the space bar</p>
 	
 		<div id="impress">
 
 <!-- Lead in section on motivation (step 1-6) -->			
 			<div class="step eternal" data-y="800">
-				<p class="large hint"> Navigate with arrows or the space bar</p>
 				<p class="large">Our future</p>
 			</div>
 
@@ -95,7 +96,7 @@
 <!-- findings part 2 -->	
 			<div class="step casper" data-y="2825" data-z="-1000" data-x="900" data-rotate-y="180">
 				<p class="left medium"><strong>Location matters.</strong><span class="accent4"> I discovered that the majority of money
-				 was spent in our hotel. This map provides insight into where we should stay next time we visit.</p>
+				 was spent and won in our hotel. This map provides insight into where we should stay next time we visit.</p>
 					<img src="map.jpg" alt="map" class="work">
 			</div>
 
@@ -315,16 +316,24 @@ do it again</a></p>
 			});
 			
 			function hint() {
-				$('body').addClass('loaded');
+				$('.hint').removeClass('hide');
+				$('.hint').addClass('show');
 			}
 			
 			var stepCount = $('.step').length;
+			var timer = null;
 			$(document).on('impress:stepenter', function(e) {
+				$('.hint').removeClass('show');
+				clearTimeout(timer);
 				var currentSlide = e.target;
 				var currentSlideProgress = $('.step').index(currentSlide) + 1;
 				var progressPerStep = 100 / stepCount;
 				var progress = Math.ceil(currentSlideProgress * progressPerStep);
 			    $('#progress-bar').css('width',progress+'%');
+				timer = setTimeout(hint, 20000);
+			});
+			$(document).on('impress:stepleave', function(e) {
+				$('.hint').addClass('hide');
 			});
 			
 			setTimeout(hint, 1);
